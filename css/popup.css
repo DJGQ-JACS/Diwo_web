@@ -39,6 +39,13 @@
 	transition: all 200ms;
 }
 
+.popupBody row ul{
+text-align: left
+}
+
+.popupBody row p{
+	text-align: left
+}
 
 ::-webkit-scrollbar {
     display: none;

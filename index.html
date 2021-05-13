@@ -32,6 +32,10 @@
                 </meta>
             </meta>
         </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> </meta>
+        <script src="js/jquery-3.2.1.js"></script>
+<script src="js/script.js"></script>
+
     </head>
     <body>
         <!-- navbar -->
@@ -92,8 +96,7 @@
         <div class="header-slider" id="header-wrapper">
             <header class="clearfix">
                 <div class="logo">
-                    <!--<img src="Img/Lofo_Diwo.png" alt="" width="100" height="100" />-->
-                    <img alt="150" height="100" src="img/shampoo/logo_diwo.png" width="150"/>
+                  <!--  <img alt="150" height="100" src="img/shampoo/logo_diwo.png" width="150"/>-->
                 </div>
                 <div class="container">
                     <div class="row">
@@ -187,28 +190,24 @@
                 <div class="row">
                     <div class="span12">
                         <div id="portfolio-wrap">
-                            <!-- portfolio item -->
-                            <div class="portfolio-item grid print unisex">
+                            <!-- portfolio item 1--> <!--Plantilla para en contenedor del filtro de los productos -->
+                            <div class="portfolio-item grid print unisex"> <!--Cambiar la clase para el filtro "unisex" por la que corresponde-->
                                 <div class="portfolio">
                                     <div class="service-box">
-                                        <a href="#popupGraso" title="Cabello Graso">
-                                            <img alt="Cabello Graso" src="img\shampoo\1x1\2-12_1.jpg"/>
+                                        <a href="#popupGraso" title="Cabello Graso"> <!--Cambiar href y el title por el del nuevo producto-->
+                                            <img alt="Cabello Graso" src="img\shampoo\1x1\2-12_1.jpg"/> <!--Cambiar alt y la imagen del nuevo producto-->
                                         </a>
-                                        <h2>
-                                            Unisex
-                                        </h2>
-                                        <!-- <p>
-                                            POMPE, Contiene muchos ingredientes maravillosos para tú cabello tales como.
-                                        </p> -->
+                                        <h2>Unisex</h2> <!--Cambiar el nombre del producto-->
                                     </div>
                                 </div>
                             </div>
-                            <!-- end portfolio item -->
-                            <!-- portfolio item -->
+                            <!-- end portfolio item 1-->
+
+                            <!-- portfolio item SE DEBEN ELIMINAR Y PONER EL BUENO-->
                             <div class="portfolio-item grid print mujeres">
                                 <div class="portfolio">
                                     <div class="service-box">
-                                        <a href="#popupSeco" title="Cabello Seco">
+                                        <a href="#popupGraso" title="Cabello Seco">
                                             <img alt="Cabello Seco" src="img\IG\Seco1.jpg"/>
                                         </a>
                                         <h2>
@@ -226,7 +225,7 @@
                             <div class="portfolio-item grid print hombres">
                                 <div class="portfolio">
                                     <div class="service-box">
-                                        <a href="#popupNormal">
+                                        <a href="#popupGraso">
                                             <img alt="cabello normal" src="img\shampoo\1x1\2-14.jpg"/>
                                         </a>
                                         <h2>
@@ -243,7 +242,7 @@
                             <div class="portfolio-item grid print mujeres">
                                 <div class="portfolio">
                                     <div class="service-box">
-                                        <a href="#popupMixtoGraso" title="Cabello Mixto Graso">
+                                        <a href="#popupGraso" title="Cabello Mixto Graso">
                                             <img alt="Cabello Mixto Graso" src="img\IG\MixtoGraso2.jpg"/>
                                         </a>
                                         <h2>
@@ -418,11 +417,11 @@
                     </div>
                     <div id="errormessage">
                     </div>
-                    <form action="php/enviar.php" class="contactForm" method="post" role="form">
+                    <form action="enviar.php" class="contactForm" method="post" role="form">
                         <div class="row">
                             <div class="span6">
                                 <div class="field your-name form-group">
-                                    <input class="form-control" data-msg="Please enter at least 4 chars" data-rule="minlen:4" id="name" name="name" placeholder="Su nombre" type="text"/>
+                                    <input class="form-control" data-msg="Please enter at least 4 chars" data-rule="minlen:4" id="name" name="nombre" placeholder="Su nombre" type="text"/>
                                     <div class="validation">
                                     </div>
                                 </div>
@@ -432,7 +431,7 @@
                                     </div>
                                 </div>
                                 <div class="field subject form-group">
-                                    <input class="form-control" data-msg="Please enter at least 8 chars of subject" data-rule="minlen:4" id="subject" name="subject" placeholder="Asunto" type="text"/>
+                                    <input class="form-control" data-msg="Please enter at least 8 chars of subject" data-rule="minlen:4" id="subject" name="asunto" placeholder="Asunto" type="text"/>
                                     <div class="validation">
                                     </div>
                                 </div>
@@ -444,7 +443,8 @@
                                     <div class="validation">
                                     </div>
                                 </div>
-                                <button  class="btn btn-theme pull-left" type="submit" value="Enviar mensaje" >Enviar Correo </button> 
+                                <input  class="btn btn-theme pull-left" type="submit" value="Enviar mensaje" ></input> 
+            </form>
                             </div>
                         </div>
                     </form>
@@ -484,64 +484,60 @@
             </div>
         </div>
     </div>
+</footer>
     <!--Popus INICIO para cada tipo de Shampoo-->
+<!--Popus INICIO para cada tipo de Shampoo-->
+<!--1. Cabello Graso--> <!--Plantilla para los productos, solo debe cambiar el id="popupGraso" por el otro tipo de producto y modificar el contenido ingredientes y propiedades-->
     <div class="overlay" id="popupGraso">
-        <!--Cabello Graso-->
         <div id="popupBody">
-            <h2>
-                Shampoo Solido para Cabello Graso
-            </h2>
-            <a href="#" id="cerrar">
-                ×
-            </a>
-            <div class="popupContent">
-                <img alt="150" height="100" src="img/IG/MixtoGraso1.jpg" width="150">
-                    <div class="row">
-                        <div class="span4 offset1">
-                            <h2>
-                                <strong>
-                                    Ingredientes
-                                </strong>
-                            </h2>
-                            <p>
-                                <ul>
-                                    <li>
-                                        Ingrediente
-                                    </li>
-                                    <li>
-                                        Ingrediente
-                                    </li>
-                                    <li>
-                                        Ingrediente
-                                    </li>
-                                    <li>
-                                        Ingrediente
-                                    </li>
-                                    <li>
-                                        Ingrediente
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div class="span4 offset1">
-                            <div>
+            <a href="#" id="cerrar">×</a>
+                <div class="popupContent">
+                    <h2>
+                        Shampoo Solido para Cabello Graso
+                    </h2>
+                        <img alt="150" height="100" src="img/IG/MixtoGraso1.jpg" width="150">
+                        <div class="row">
+                            <div class="span4 offset1">
                                 <h2>
                                     <strong>
-                                        Propiedades
+                                        Ingredientes
                                     </strong>
                                 </h2>
                                 <p>
-                                    Contamos con diferentes productos para el cuidado del cabello y de la piel, nuestros producto estrella son los shampoo solidos
-                            para el cabello, tienen diferentes propiedades de aportan a cada tipo de cabello entre los cuales tenemos: seco, mixto graso, normal.
+                                    <ul>
+                                        <li>
+                                            Ingrediente
+                                        </li>
+                                        <li>
+                                            Ingrediente
+                                        </li>
+                                        <li>
+                                            Ingrediente
+                                        </li>
+                                        <li>
+                                            Ingrediente
+                                        </li>
+                                        <li>
+                                            Ingrediente
+                                        </li>
+                                    </ul>
                                 </p>
                             </div>
+                            <div class="span4 offset1">
+                            <div>
+                                <h2><strong>Propiedades</strong></h2>
+                                    <p>
+                                    Contamos con diferentes productos para el cuidado del cabello y de la piel, nuestros producto estrella son los shampoo solidos
+                                    para el cabello, tienen diferentes propiedades de aportan a cada tipo de cabello entre los cuales tenemos: seco, mixto graso, normal.
+                                    </p>
+                            </div>
+                            </div>
                         </div>
-                    </div>
                 </img>
             </div>
         </div>
     </div>
-    <!--Popus FIN-->
+    <!----------------------------------------------------------Popus FIN ---------------------------------------------------------------------------------------------------->
     <div class="overlay" id="popupSeco">
         <!--Cabello Seco-->
         <div id="popupBody">
@@ -719,7 +715,7 @@
         </div>
     </div>
     <!--Popus FIN-->
-</footer>
+
 <a class="scrollup" href="#">
     <i class="icon-angle-up icon-square icon-bgdark icon-2x">
     </i>
@@ -736,8 +732,6 @@
 <script src="js/inview.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </body>
 </html>
 

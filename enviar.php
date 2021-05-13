@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/html;charset=\"utf-8\"");
-$name = $_POST['nombre'];
+$nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $subject = $_POST['asunto'];
 $message = $_POST['mensaje'];
@@ -10,7 +10,7 @@ $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
-$mensaje = "Este mensaje fue enviado por " . $name . ",\r\n";
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 $mensaje .= "Asunto: " . $subject . " \r\n";
 $mensaje .= "Mensaje: " . $message . " \r\n";
@@ -21,6 +21,5 @@ $asunto = 'Mensaje de mi sitio web';
 
 if (mail($para, $asunto, utf8_decode($mensaje), $header))
 echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente');</script>";
-
 
 ?>
