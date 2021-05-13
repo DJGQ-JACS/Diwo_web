@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/html;charset=\"utf-8\"");
-$name = $_POST['name'];
+$name = $_POST['nombre'];
 $mail = $_POST['email'];
 $subject = $_POST['asunto'];
 $message = $_POST['mensaje'];
